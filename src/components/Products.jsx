@@ -1,5 +1,6 @@
 import Product from "./Product";
 import productList from '../data/productData'
+
 const Products = () => {
   
 
@@ -8,8 +9,7 @@ const Products = () => {
       <h1 className="text-lg font-bold my-8">Products</h1>
       <div className="grid grid-cols-5 my-8 gap-24">
         {productList.map((product) => {
-          console.log(product)
-          return <Product key={product.id} pizzaProp={product} />;
+          return <Product  key={product.id} pizzaProp={product} />;
         })}
       </div>
     </div>

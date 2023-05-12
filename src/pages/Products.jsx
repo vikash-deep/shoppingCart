@@ -1,8 +1,9 @@
-const Products = () => {
+import Products from "../components/Products";
+
+const ProductsPage = () => {
   return (
-    // <Products />
-    <div>product</div>
+    <Products />
   )
 }
 
-export default Products
+export default ProductsPage
