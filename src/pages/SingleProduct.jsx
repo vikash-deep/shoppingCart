@@ -1,6 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
 import productList from '../data/productData'
-import { Link } from "react-router-dom";
 
 
 const SingleProduct = () => {
@@ -13,7 +12,6 @@ const SingleProduct = () => {
   const { name, price, size } = product
   return (
     <div className="container mx-auto mt-12">
-      {/* <Link to="/"> <button className="mb-12 font-bold">Back</button></Link> */}
       <button onClick={() => navigate(-1)} className="mb-12 font-bold">Back</button>
       <div className="flex ">
         <img src="/images/peproni.png" alt="pizza" />
