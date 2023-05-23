@@ -12,17 +12,16 @@ const App = () => {
   const [cart, setCart] = useState({});
 
   //fetching cart items from local storage
+  
   useEffect(() => {
-    // const cart = window.localStorage.setItem('cart', JSON.stringify(cart))
+    const cart = window.localStorage.getItem('cart')
+    console.log(JSON.parse(cart));
+    setCart(JSON.parse(cart));
   }, [])
 
   useEffect(() => {
-    // const cart = window.localStorage.getItem('cart')
-  }, [])
-
- 
-
-
+  window.localStorage.setItem('cart',JSON.stringify(cart));
+  }, [cart])
 
 
 

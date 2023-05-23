@@ -1,7 +1,6 @@
 import Product from "./Product";
 import productList from '../data/productData'
-import { CartContext } from "../Cartcontext";
-import { useContext } from "react";
+
 
 const Products = () => {
   // let {myname}=useContext(CartContext);
